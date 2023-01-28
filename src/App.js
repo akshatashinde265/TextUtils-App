@@ -1,5 +1,5 @@
 import './App.css';
-import About from './components/About';
+//import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import React, { useState } from 'react';
@@ -40,22 +40,22 @@ setAlert(null);
   }
   return ( 
   <>
-   <BrowserRouter>
+  {/*<BrowserRouter>
 
-<Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+//<Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
 <Alert alert={alert}/>
 <div className="container my-3" >
 <Routes>
          
-          <Route exact path ="/" element={<TextForm  heading="Enter the text to analyze below" mode={mode} showAlert={showAlert} />}>
+          //<Route exact path ="/" element={*/}<TextForm  heading="Enter the text to analyze below" mode={mode} showAlert={showAlert} />{/*}}>
           </Route>
           
           <Route exact path="/about" element={<About/>}>
             </Route>
  </Routes>
- </div>
+  </div>*/}
  
- </BrowserRouter>
+ {/* </BrowserRouter>*/}
  </>
   );
 }
